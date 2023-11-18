@@ -1,0 +1,19 @@
+#!/bin/bash
+###The following lines explain how to create and push code to GH repository from command line.
+
+#echo "# frist_repos" >> README.md
+#git init
+#git add README.md
+#git commit -m "first commit"
+#git branch -M main		## renames 'master' branch to 'main'
+#git remote add origin https://github.com/jgw004/frist_repos.git
+#git push -u origin main
+#git restore --staged <path/file>
+
+##after initilizing a repository
+git remote add origin https://github.com/jgw004/devops-automation.git
+; git branch -M main
+; git push -u origin main
+
+
+
