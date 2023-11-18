@@ -1,0 +1,13 @@
+# This cron job is meant to update the Linux OS daily.
+##minute (0-59) | hour (0-23) | day of mo (1-31) | month of year (1-12) | day of week (0-6)
+
+## Update package lists and installed packages on Devian/Ubuntu
+0 0 * * * /usr/bin/apt-get update && /usr/bin/apt-get -y upgrade   ##default output is sent to /var/mail/[user]  
+
+## Update package lists and installed packages on Red Hat/CentOS
+0 0 * * * /usr/bin/yum -y update
+
+
+# @daily will also work 
+
+

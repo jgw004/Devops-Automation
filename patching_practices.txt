@@ -1,0 +1,27 @@
+#This is like a README file to understand good practices and examples of patching the Linux OS.
+
+## Weekly patching is likely necessary; daily could be a waste of resource and bandwidth.
+## Separate 'Critical' Patches from 'Performance-based Updates
+
+# 1. General Software and Sys Updates
+## allow time for the public to test new general software and sys updates (~1mo) before applying them to your own sys.
+## update from RPM Repositories for trustworthy sources, verified through MD5 checksums.
+
+# 2. Subscribe to Red Hate or Debian-based Ubuntu dist for user notifications of security updates.
+
+# 3. Bugs in Updates are Unavoidable, so Prepare.
+## review and test non-essential updates a few times before releasing
+## plan reg backups to roll back, just in case
+
+# 4. For Business Continuity, Apply Patching Updates Over Weekends or After Hours.
+
+# 5. Read the Release Notes BEFORE Patching to Notice any Potential, Major Changes.
+
+# 6. Updating Software may come with More Resources so Prepare to Combat.
+## upgrade resources that can trigger a slow-down
+## plan sys upgrades in case something goes wry
+## consider virualization; virtual servers are easier to manage and configure
+
+
+
+
