@@ -11,7 +11,7 @@
 #git restore --staged <path/file>
 
 ##after initilizing a repository
-git remote add origin https://github.com/jgw004/devops-automation.git
+git remote add origin https://github.com/jgw004/Devops-Automation.git
 ; git branch -M main
 ; git push -u origin main
 
