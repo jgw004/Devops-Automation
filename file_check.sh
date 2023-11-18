@@ -5,7 +5,7 @@
 file="$1"
 
 # file exists
-[ -e "$file" ] && echo "Yes, $file is a file." || echo "No, $file is not a file or does not exist."
+[ -e "$file" ] && echo "Yes! The $file file exists!" || echo "No. The $file file does not exist or is not in that pathway."
 
 # allow user input at the CLI
 #read -p "What is your name? " NAME
