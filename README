@@ -2,7 +2,7 @@
 ###The following lines explain how to create and push code to GH repository from command line.
 
 #git init			##initialize the git repository for development
-#git add .			##move all changes to stagining
+#git add .			##move all changes to staging
 #git commit -m "first commit" 	##create snapshots of staged contents
 #git merge -u origin master	##merge remote branch into current branch
 #git push -u origin master		##
