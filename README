@@ -13,4 +13,5 @@
 
 #git branch -M master			##rename from main
 #git push -u origin master		##push commits to remote repository
+#git pull				##update the local repository with accepted pull requests!
 
