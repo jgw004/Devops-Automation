@@ -1,19 +1,16 @@
 #!/bin/bash
-###The following lines explain how to create and push code to GH repository from command line.
 
-#git init			##initialize the git repository for development
-#git add .			##move all changes to staging
-#git commit -m "first commit" 	##create snapshots of staged contents
-#git merge -u origin master	##merge remote branch into current branch
+##The PURPOSE in this repository is to practice and to track common git commands being used.
+
+#git init				##initialize git repository 
+#git add .				##move all changes to staging
+#git commit -m "first commit" 		##create snapshots of staged contents
+#git merge -u origin master		##merge remote branch into current branch
 #git push -u origin master		##
 #git restore --staged <path/file>	##
-#git push -d origin <path/branch>	##delete a branch
+#git push -d origin <path/branch>	##delete branch locally & remotely
 #git branch -d test-branch		##deletes branch locally, not remotely
 
-##after initilizing a repository##
-git remote add origin https://github.com/jgw004/Devops-Automation.git
-; git branch -M main
-; git push -u origin master
-
-
+#git branch -M master			##rename from main
+#git push -u origin master		##push commits to remote repository
 
