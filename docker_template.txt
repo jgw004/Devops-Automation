@@ -1,0 +1,36 @@
+### Purpose is to help from having to create dockerfiles from scratch.
+
+## base image
+FROM base_image:tag
+
+# working directory within container
+WORKDIR /app
+
+# copies app source code to container
+COPY . /app
+
+# install dependencies and any necessary setup
+RUN apt-get update && \
+    apt-get install -y package1 package2 && \
+    npm install
+
+# environment variables
+ENV ENV_VARIABLE=value
+
+# expose ports (if applicable)
+EXPOSE 80
+
+# health check of running container
+HEALTHCHECK CMD curl --fail http://localhost/ || exit 1
+
+# command to run upon boot 
+CMD ["command", "arg1", "arg2"]
+
+# metadata labeling (can be useful)
+LABEL maintainer="Your Name <your.email@example.com>"
+
+# further customizations (e.g., user, volume, etc.)
+USER user_name
+VOLUME /data
+
+
