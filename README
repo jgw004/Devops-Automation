@@ -10,8 +10,13 @@
 #git restore --staged <path/file>	##
 #git push -d origin <path/branch>	##delete branch locally & remotely
 #git branch -d test-branch		##deletes branch locally, not remotely
-
 #git branch -M master			##rename from main
 #git push -u origin master		##push commits to remote repository
 #git pull				##update the local repository with accepted pull requests!
+
+#git add .
+#git commit -m 'modification'
+#git push
+#git pull
+
 
