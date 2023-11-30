@@ -1,5 +1,5 @@
 #!/bin/bash
-## Purpose is to allow user input for 'docker pull' of an image.
+## Purpose is to allow user input for '#docker pull' of an image.
 
 # Pull Options
 $1=Nginx
@@ -18,20 +18,20 @@ read answer
 if [ $answer = y ] ; then
     if [ $num_inp -eq 1 ] ; then
         echo Pulling Nginx image...
-        docker pull nginx
+        #docker pull nginx
     elif [ $num_inp -eq 2 ] ; then
         echo Pulling helloworld image...
-        docker pull helloworld
-        #docker pull dockercloud/hello-world
+        #docker pull helloworld
     elif [ $num_inp -eq 3 ] ; then
         echo Pulling Wordpress image...
-        docker pull wordpress
+        #docker pull wordpress
     elif [ $num_inp -eq 4 ] ; then
         echo Pulling Postgresql image...
-        docker pull postgres
+        #docker pull postgres
     else
         echo Invalid input, please try again.
     fi
 else
-    echo Please enter a valid number next time.
-    fi
+    echo Please enter a valid number next time..
+    ./dockerpull.sh
+fi
