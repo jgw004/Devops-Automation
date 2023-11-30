@@ -1,0 +1,2 @@
+#Run a cron job on Monday at 07:00
+11 12 * * * /Users/jowills/Desktop/ME/cron_job > /Users/jowills/Desktop/ME/LinuxAdmin/cron.txt 
