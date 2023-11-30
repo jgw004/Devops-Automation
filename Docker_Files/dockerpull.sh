@@ -15,7 +15,7 @@ read num_inp
 echo You have chosen $num_inp. Is this correct [y,n]?
 read answer
 
-if [ $answer = y ] ; then
+if [ $answer = 'y' ] ; then
     if [ $num_inp -eq 1 ] ; then
         echo Pulling Nginx image...
         #docker pull nginx
@@ -33,5 +33,6 @@ if [ $answer = y ] ; then
     fi
 else
     echo Please enter a valid number next time..
+    echo ........................
     ./dockerpull.sh
 fi
