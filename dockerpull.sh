@@ -22,7 +22,6 @@ if [ $answer = y ] ; then
     elif [ $num_inp -eq 2 ] ; then
         echo Pulling helloworld image...
         docker pull helloworld
-        #docker pull dockercloud/hello-world
     elif [ $num_inp -eq 3 ] ; then
         echo Pulling Wordpress image...
         docker pull wordpress
