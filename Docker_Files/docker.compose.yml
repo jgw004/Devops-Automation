@@ -1,0 +1,49 @@
+### The purpose for this script is to used docker-compose to create containers for Helloworld, Nginx, and postgresql \
+#### on the same network, with different volumes.
+
+version: "3.8"
+
+services:
+  web:
+    image: nginx:latest
+    container_name: nginx
+    ports:
+      - "8080:80"
+    volumes:
+      - nginx:/etc/nginx/conf.d
+    networks:
+      - mynetwork
+  db:
+    image: postgres:latest
+    container_name: postgres
+    environment:
+      - POSTGRES_USER: jgw
+      - POSTGRES_PASSWORD: password
+      - POSTGRES_DB: mypostgresdb
+    volumes:
+      - postgresql_volume:/var/lib/postgresql/data
+    networks:
+      - mynetwork
+  app:
+    image: hello-world:latest
+    container_name: helloworld
+    ports:
+      - "5000:5000"
+    volumes:
+      - helloworld:/app
+    networks:
+      - mynetwork
+
+volumes:
+  postgresql_volume:
+  helloworld:
+  nginx:
+
+networks:
+  mynetwork:
+    driver: bridge
+```
+
+
+
+
