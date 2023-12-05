@@ -4,20 +4,20 @@
 ### available options to pull.
 
 
-echo ""
-echo " _"
+#echo ""
+echo "|"
 
 # Collect User Input
 echo "  Which docker image would you like to pull today?"
 echo "  'Nginx'[1] or 'helloworld'[2] or 'Wordpress'[3] or 'Postgresql'[4]"
 read num_inp
 
-echo "  You have chosen #$num_inp.. Is this correct [y,n]?"
+echo "  You have chosen $num_inp.. Is this correct [y,n]?"
 read answer
 
 if [ $answer = 'y' ] ; then
     if [ $num_inp -eq 1 ] ; then
-        echo "Pulling image image..."
+        echo "Pulling Nginx image..."
         #docker pull nginx
     elif [ $num_inp -eq 2 ] ; then
         echo "Pulling helloworld image..."
