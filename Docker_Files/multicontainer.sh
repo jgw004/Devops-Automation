@@ -27,7 +27,7 @@ elif [ $num_container = "1+" ] ; then
     read more_container
     if [[ $more_container == 'y' || $more_container == 'Y' ]] ; then
         echo "  Creating containers..."
-        docker-compose up -d
+        ./docker.compose.yml up
     else
         echo ""
         echo "."
