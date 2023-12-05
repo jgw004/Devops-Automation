@@ -1,8 +1,3 @@
-### The purpose for this script is to used docker-compose to create containers for Helloworld, Nginx, and postgresql \
-#### on the same network, with different volumes.
-
-version: "3.8"
-
 services:
   web:
     image: nginx:latest
@@ -42,8 +37,5 @@ volumes:
 networks:
   mynetwork:
     driver: bridge
-```
-
-
 
 
