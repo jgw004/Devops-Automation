@@ -9,7 +9,7 @@ echo "|"
 
 # Collect User Input
 echo "  Which docker image would you like to pull today?"
-echo "  'Nginx'[1] or 'helloworld'[2] or 'Wordpress'[3] or 'Postgresql'[4]"
+echo "  'Nginx'[1] or 'hello-world'[2] or 'Wordpress'[3] or 'Postgresql'[4]"
 read num_inp
 
 echo "  You have chosen $num_inp.. Is this correct [y,n]?"
@@ -31,7 +31,7 @@ if [ $answer = 'y' ] ; then
     	    echo "Pulling Nginx image as $tag_answer..."
     	    docker pull nginx:$tag_answer
     	elif [ $num_inp -eq 2 ] ; then
-    	    echo "Pulling helloworld image as $tag_answer..."
+    	    echo "Pulling hello-world image as $tag_answer..."
     	    docker pull helloworld:$tag_answer
     	elif [ $num_inp -eq 3 ] ; then
     	    echo "Pulling Wordpress image as $tag_answer..."
@@ -50,7 +50,7 @@ if [ $answer = 'y' ] ; then
             echo "Pulling Nginx image..."
             docker pull nginx
         elif [ $num_inp -eq 2 ] ; then
-            echo "Pulling helloworld image..."
+            echo "Pulling hello-world image..."
             docker pull helloworld
         elif [ $num_inp -eq 3 ] ; then
             echo "Pulling Wordpress image..."

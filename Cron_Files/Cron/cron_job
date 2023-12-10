@@ -1,4 +1,0 @@
-
-echo "Good Morning: "; printenv USER
-
-
