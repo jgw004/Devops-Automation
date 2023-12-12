@@ -1,2 +1,5 @@
 FROM hello-world
-CMD ["sleep","2m"]
+COPY ../patching_practices.txt /helloContainer
+CMD ["sleep","1m"]
+
+

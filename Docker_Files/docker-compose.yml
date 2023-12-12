@@ -1,7 +1,17 @@
+version: '3.8'
+
+volumes:
+  postgresql:
+  helloworld:
+  nginx:
+
+networks:    
+  mynetwork:
+
 services:
   web:
-    image: nginx:latest
     container_name: nginx
+    image: nginx:latest
     ports:
       - "8080:80"
     volumes:
@@ -9,19 +19,19 @@ services:
     networks:
       - mynetwork
   db:
-    image: postgres:latest
     container_name: postgres
+    image: postgres:latest
     environment:
-      - POSTGRES_USER: jgw
-      - POSTGRES_PASSWORD: password
-      - POSTGRES_DB: mypostgresdb
+      POSTGRES_USER: pg-user
+      POSTGRES_PASSWORD: pg-pass
+      POSTGRES_DB: mypostgresdb
     volumes:
-      - postgresql_volume:/var/lib/postgresql/data
+      - postgresql:/var/lib/postgresql/data
     networks:
       - mynetwork
   app:
-    image: hello-world:latest
     container_name: helloworld
+    image: hello-world:latest
     ports:
       - "5000:5000"
     volumes:
@@ -29,13 +39,5 @@ services:
     networks:
       - mynetwork
 
-volumes:
-  postgresql_volume:
-  helloworld:
-  nginx:
-
-networks:
-  mynetwork:
-    driver: bridge
 
 
