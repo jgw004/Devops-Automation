@@ -1,11 +1,24 @@
 #!/bin/bash
-
 ##The PURPOSE in this repository is to practice and to track common git commands being used.
+
+######################
+## Initialize the environment
+git init
+
+## Establish new remote origin
+git remote add origin https://github.com/OWNER/REPOSITORY.git
+
+### Verify the connection
+git remote -v
+>> origin  https://github.com/OWNER/REPOSITORY.git (fetch)
+>> origin  https://github.com/OWNER/REPOSITORY.git (push)
+
+######################
 
 #git init				##initialize git repository 
 #git add .				##move all changes to staging
 #git commit -m "first commit" 		##create snapshots of staged contents
-#git merge -u origin master		##merge remote branch into current branch
+#git merge -u origin master		##merge remote branch into master branch
 #git push -u origin master		##
 #git restore --staged <path/file>	##
 #git push -d origin <path/branch>	##delete branch locally & remotely
