@@ -13,6 +13,8 @@ git remote -v
 >> origin  https://github.com/OWNER/REPOSITORY.git (fetch)
 >> origin  https://github.com/OWNER/REPOSITORY.git (push)
 
+git pull origin main
+
 ######################
 
 #git init				##initialize git repository 
