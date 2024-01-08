@@ -33,6 +33,7 @@ LABEL maintainer="Your Name <your.email@example.com>"
 USER user_name
 VOLUME /data
 
+<<<<<<< HEAD
 ========================================
 FROM: Specifies the base image for your application.
 WORKDIR: Sets the working directory inside the container.
@@ -45,5 +46,19 @@ CMD: Provides the default command to run when the container starts.
 USER: Sets the user for the subsequent instructions.
 VOLUME: Creates a mount point for external volumes.
 ========================================
+=======
+#========================================
+# FROM: Specifies the base image for your application.
+# WORKDIR: Sets the working directory inside the container.
+# COPY: Copies files from the host to the container.
+# RUN: Executes commands during the build process.
+# ENV: Sets environment variables.
+# EXPOSE: Informs Docker that the container listens on specified network ports.
+# HEALTHCHECK: Defines a command to check the health of the running container.
+# CMD: Provides the default command to run when the container starts.
+# USER: Sets the user for the subsequent instructions.
+# VOLUME: Creates a mount point for external volumes.
+#========================================
+>>>>>>> feature1
 
 
